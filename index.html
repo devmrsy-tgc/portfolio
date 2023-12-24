@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
+
 <body>
-    this is my Portfolio
+    <div style="font-weight: bold; font-size: 50px">All Projects</div>
+
+    <ul>
+        <li><a id="web_02:30-03:30" target="_blank" href="https://devmrsy-tgc.github.io/web_fresh_2-30_3-30/">Web
+                02:30-03:30 HTML/CSS</a></li>
+    </ul>
+
+    <script>
+        // var baseURL = "/portfolio";
+
+        //   var loaderPageURL = baseURL + "/loader/index.html";
+
+        var listItems = document.querySelectorAll("ul li");
+        listItems.forEach(function (li) {
+            var anchorElement = li.querySelector("a");
+            switch (anchorElement.id) {
+                //   case "loader":
+                //     document
+                //       .querySelector("#loader")
+                //       .setAttribute("href", loaderPageURL);
+                //       break;
+            }
+        });
+    </script>
 </body>
+
 </html>
